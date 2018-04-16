@@ -29,9 +29,13 @@ else
 end
 
 def draw?(board)
-  if full?(board) && !won?(board)
-    true 
-  else
-    false 
+  full?(board) && !won?(board)
+end
+
+def play(board)
+  if draw?(board) 
+    puts "Cat's Game!"
+  else 
+    puts "Congratulations #{winner(board)}"
   end
 end

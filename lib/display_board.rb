@@ -16,10 +16,22 @@ end
 def full?(board) 
   board.all? {|cell| cell == "X" || cell == "O"}
 end
+WINCOMBOS = []
+def won?(board)
+  WINCOMBOS.detect do |combo|
+    board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]] && (board[combo[0]]) == "X" || board[combo[0]]) == "O")
+  end
+end
 if full?(board) 
   true 
 else 
   false 
 end
 
-full?(board)
+def draw?(board)
+  if full?(board) && !won?(board)
+    true 
+  else
+    false 
+  end
+end

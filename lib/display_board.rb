@@ -17,3 +17,5 @@ if full?(board)
 else 
   false 
 end
+
+full?(board)

@@ -11,3 +11,4 @@ def display_board(array)
 end
 
 display_board(board[0])
+puts board[0]

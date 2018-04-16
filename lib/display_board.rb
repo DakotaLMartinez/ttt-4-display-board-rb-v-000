@@ -12,6 +12,10 @@ end
 
 # display_board(board)
 # puts board[0]
+
+def full?(board) 
+  board.all? {|cell| cell == "X" || cell == "O"}
+end
 if full?(board) 
   true 
 else 

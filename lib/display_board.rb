@@ -10,5 +10,5 @@ def display_board(board)
   puts "   |   |   " 
 end
 
-display_board(board)
-puts board[0]
+# display_board(board)
+# puts board[0]

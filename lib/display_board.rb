@@ -12,4 +12,8 @@ end
 
 # display_board(board)
 # puts board[0]
-if 
+if full?(board) 
+  true 
+else 
+  false 
+end
